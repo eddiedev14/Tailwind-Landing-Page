@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-poppins px-[4vw] pt-7">
+    <header>
+        <nav class="fixed top-0 left-0 w-full px-[4vw] flex justify-between items-center mb-16 h-[60px] bg-white">
+            <figure>
+                <img src="assets/Growth Logo.png" alt="Logo">
+            </figure>
+            <ul class="fixed top-0 right-0 translate-x-full h-screen w-56 px-5 bg-primary-500 text-white font-medium flex flex-col justify-center gap-8 transition-transform duration-500" id="navList">
+                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Features</a></li>
+                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">About Us</a></li>
+                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Blog</a></li>
+                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Log in</a></li>
+                <button class="absolute top-6 right-6 text-xl" id="closeNav"><i class="fa-solid fa-close"></i></button>
+            </ul>
+            <button class="bg-gray-100 w-10 h-10 rounded-xl hover:bg-primary-500 hover:text-white transition-colors duration-300" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+
+        <section class="text-center text-gray-900 mb-16 pt-20">
+            <h1 class="text-4xl font-medium mb-4">A powerful solution to grow your startup. Fast!</h1>
+            <p class="text-lg mb-8">Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth tool.</p>
+            <div class="flex flex-col gap-5 *:px-8 *:py-4 *:rounded-2xl *:font-medium">
+                <a href="#" class="bg-primary-500 text-white hover:bg-primary-700 focus:bg-primary-700 transition-colors duration-300 cursor-pointer">Get Started</a>
+                <a href="#" class="bg-gray-100 transition-colors duration-300 hover:bg-gray-200 focus:bg-gray-200"><i class="fa-solid fa-camera"></i> Book a demo</a>
+            </div>
+            <figure>
+                <img src="assets/Landing Page Illustration.png" alt="Landing Page Illustration" class="mt-16">
+            </figure>
+        </section>
+    </header>
+
+    <section>
+        <h2 class="text-center text-3xl text-gray-900 font-medium mb-4">Essential tools for propelling your business forward</h2>
+        <p class="text-center text-gray-700">Streamline your operations, boost productivity and drive growth with our essential tools</p>
+        <div class="mt-10">
+            <div class="mb-6">
+                <h3 class="text-gray-900 font-medium text-2xl mb-2">Dashboard and reporting</h3>
+                <p class="text-gray-700">Gain valuable insights with real-time monitoring. Track key performance indicators and make data-driven decisions.</p>
+                <div class="mt-6 flex flex-col">
+                    <div>
+                        <h4 class="text-gray-900 text-xl mb-2">Real-time monitoring <i class="fa-solid fa-arrow-right"></i></h4>
+                        <p class="text-gray-700 pb-5 border-b border-b-gray-900">View live data and performance metrics.</p>
+                    </div>
+                    <div class="py-4 border-b border-b-slate-300 text-xl"><h4>Data visualization</h4></div>
+                    <div class="py-4 border-b border-b-slate-300 text-xl"><h4>Alerts and notifications</h4></div>
+                </div>
+            </div>
+            <div>
+                <figure class="bg-gray-200 rounded p-4 flex justify-center">
+                    <img src="assets/Esential Tools.png" alt="Esential Tools Illustration">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
