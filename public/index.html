@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-poppins px-[4vw] pt-7">
+<body class="font-poppins pt-7 flex flex-col gap-16 *:px-[4vw]">
     <header>
         <nav class="fixed top-0 left-0 w-full px-[4vw] flex justify-between items-center mb-16 h-[60px] bg-white">
             <figure>
@@ -23,7 +23,7 @@
             <button class="bg-gray-100 w-10 h-10 rounded-xl hover:bg-primary-500 hover:text-white transition-colors duration-300" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
         </nav>
 
-        <section class="text-center text-gray-900 mb-16 pt-20">
+        <section class="text-center text-gray-900 pt-20">
             <h1 class="text-4xl font-medium mb-4">A powerful solution to grow your startup. Fast!</h1>
             <p class="text-lg mb-8">Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth tool.</p>
             <div class="flex flex-col gap-5 *:px-8 *:py-4 *:rounded-2xl *:font-medium">
@@ -56,6 +56,125 @@
                 <figure class="bg-gray-200 rounded p-4 flex justify-center">
                     <img src="assets/Esential Tools.png" alt="Esential Tools Illustration">
                 </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+        <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h3 class="font-medium text-2xl">Business communications</h3>
+                <p class="text-gray-700">Keep track of your contacts, schedule appointments and never miss a follow-up with our powerful contact management solution. Store and organise contact information for clients, partners, and potential investors.</p>
+            </div>
+            <a href="#" class="font-medium">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div>
+            <figure class="bg-gray-200 rounded p-4 flex justify-center">
+                <img src="assets/Business Communications.png" alt="Business Communications Illustration">
+            </figure>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+        <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-2">
+                <h3 class="font-medium text-2xl">Communication tools</h3>
+                <p class="text-gray-700">Keep your team informed and on the same page with our real-time communication tools for messaging, video conferencing and more.</p>
+            </div>
+            <a href="#" class="font-medium">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div>
+            <figure class="bg-gray-200 rounded p-4 flex justify-center">
+                <img src="assets/Comunication Tools.png" alt="Communications Tools Illustration">
+            </figure>
+        </div>
+    </section>
+
+    <main class="mt-10 bg-black text-white flex flex-col *:flex *:flex-col gap-16">
+        <section class="gap-8 py-14 items-center border-b border-b-slate-300">
+            <h2 class="text-center font-medium text-3xl">See how it works and get started in less than 2 minutes</h2>
+            <figure class="cursor-pointer">
+                <img src="assets/Video.png" alt="Video">
+            </figure>
+            <a href="#" class="bg-primary-500 w-full text-center py-4 rounded-2xl font-medium hover:animate-pulse">Get Started</a>
+        </section>
+        <section class="gap-10 pb-14">
+            <h2 class="font-medium text-3xl text-balance">Don't just take our word for it, see the success  stories from businesses just like yours.</h2>
+            <div class="flex gap-8 flex-wrap *:flex *:flex-col *:gap-5 *:px-6 *:py-8 *:bg-white *:rounded-2xl *:text-black *:max-w-80 *:h-min justify-center">
+                <div>
+                    <cite>“Our business has seen a significant increase in productivity since we started using the Growth app.”</cite>
+                    <div>
+                        <h4 class="font-medium">Katherine Smith</h4>
+                        <span>Copadopera</span>
+                    </div>
+                </div>
+                <div>
+                    <cite>“As a small business owner, it's important to have a tool that can help me keep track of everything. The Growth app has been a lifesaver for me, allowing me to manage my contacts, schedule appointments, and track progress all in one place.”</cite>
+                    <div>
+                        <h4 class="font-medium">Jonathan Lee</h4>
+                        <span>Red Bolt</span>
+                    </div>
+                </div>
+                <div>
+                    <cite>“The dashboards and reporting feature has provided valuable insights into our performance and helped us make data-driven decisions. It's a game changer for us.”</cite>
+                    <div>
+                        <h4 class="font-medium">David Wilson</h4>
+                        <span>Slide</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="flex flex-col gap-10">
+        <div class="flex flex-col gap-4 text-center">
+            <h2 class="font-medium text-3xl">Pricing</h2>
+            <p class="text-gray-700">Start free and scale while you grow. No hidden fees. Unlimited users for free.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8 *:px-6 *:py-10 *:rounded-2xl *:shadow-lg *:shadow-gray-400 *:max-w-[400px] *:h-min *:flex *:flex-col *:gap-8">
+            <div>
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-1">
+                        <h4 class="font-medium text-2xl">Simple</h4>
+                        <p class="text-gray-700">Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <h5 class="font-medium text-2xl">Free</h5>
+                        <span>* No credit card required</span>
+                    </div>
+                    <hr class="border-gray-400">
+                    <ul class="flex flex-col gap-3 *:flex *:gap-3 *:items-start">
+                        <li><i class="fa-solid fa-check"></i> Real-time monitoring</li>
+                        <li><i class="fa-solid fa-check"></i> Track key performance indicators</li>
+                        <li><i class="fa-solid fa-check"></i> Schedule appointments</li>
+                        <li><i class="fa-solid fa-check"></i> Organize, delete and keep track of tasks</li>
+                    </ul>
+                    <a href="#" class="bg-primary-500 w-full text-center py-4 rounded-2xl font-medium hover:animate-pulse text-white">Get Started</a>
+                </div>
+            </div>
+            <div class="bg-black text-white">
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-1">
+                        <h4 class="font-medium text-2xl">Premium</h4>
+                        <p class="text-gray-700">Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+                    </div>
+                    <div class="flex gap-1 items-center">
+                        <h5 class="font-medium text-2xl">$49</h5>
+                        <span>/month</span>
+                    </div>
+                    <hr class="border-gray-400">
+                    <div class="flex flex-col gap-3">   
+                        <p>Everything from the free plan plus:</p>
+                        <ul class="flex flex-col gap-3 *:flex *:gap-3 *:items-start">
+                            <li><i class="fa-solid fa-check"></i> Data-driven decisions</li>
+                            <li><i class="fa-solid fa-check"></i> Data visualisation</li>
+                            <li><i class="fa-solid fa-check"></i> Schedule appointments</li>
+                            <li><i class="fa-solid fa-check"></i> Store and organise contact information</li>
+                            <li><i class="fa-solid fa-check"></i> Teal-time communication tools for messaging and video conferencing</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="bg-primary-500 w-full text-center py-4 rounded-2xl font-medium hover:animate-pulse">Get Started</a>
+                </div>
             </div>
         </div>
     </section>
