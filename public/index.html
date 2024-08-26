@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-poppins pt-7 flex flex-col gap-16 *:px-[4vw]">
+<body class="font-poppins pt-7 flex flex-col gap-16 *:px-[4vw] sm:*:px-[6vw] lg:gap-28">
     <header>
-        <nav class="fixed top-0 left-0 w-full px-[4vw] flex justify-between items-center mb-16 h-[60px] bg-white">
+        <nav class="fixed top-0 left-0 w-full px-[4vw] sm:px-[6vw] flex justify-between items-center mb-16 h-[60px] bg-white">
             <figure>
                 <img src="assets/Growth Logo.png" alt="Logo">
             </figure>
-            <ul class="fixed top-0 right-0 translate-x-full h-screen w-56 px-5 bg-primary-500 text-white font-medium flex flex-col justify-center gap-8 transition-transform duration-500" id="navList">
-                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Features</a></li>
-                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">About Us</a></li>
-                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Blog</a></li>
-                <li class="pb-2 border-b border-b-slate-100/50"><a href="#">Log in</a></li>
-                <button class="absolute top-6 right-6 text-xl" id="closeNav"><i class="fa-solid fa-close"></i></button>
+            <ul class="fixed top-0 right-0 translate-x-full h-screen w-56 px-5 bg-primary-500 text-white font-medium flex flex-col justify-center gap-8 transition-transform duration-500 *:pb-2 *:border-b *:border-b-slate-100/50 *:font-medium *:lg:pb-0 lg:translate-x-0 lg:static lg:h-full lg:w-full lg:px-0 lg:bg-white lg:z-10 lg:text-gray-900 lg:flex-row lg:items-center lg:justify-end" id="navList">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#" class="lg:py-3 lg:px-6 lg:bg-slate-200 lg:rounded-xl">Log in</a></li>
+                <button class="absolute top-6 right-6 text-xl lg:hidden" id="closeNav"><i class="fa-solid fa-close"></i></button>
             </ul>
-            <button class="bg-gray-100 w-10 h-10 rounded-xl hover:bg-primary-500 hover:text-white transition-colors duration-300" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+            <button class="bg-gray-100 w-10 h-10 rounded-xl hover:bg-primary-500 hover:text-white transition-colors duration-300 lg:hidden" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
         </nav>
 
-        <section class="text-center text-gray-900 pt-20">
-            <h1 class="text-4xl font-medium mb-4">A powerful solution to grow your startup. Fast!</h1>
-            <p class="text-lg mb-8">Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth tool.</p>
-            <div class="flex flex-col gap-5 *:px-8 *:py-4 *:rounded-2xl *:font-medium">
-                <a href="#" class="bg-primary-500 text-white hover:bg-primary-700 focus:bg-primary-700 transition-colors duration-300 cursor-pointer">Get Started</a>
-                <a href="#" class="bg-gray-100 transition-colors duration-300 hover:bg-gray-200 focus:bg-gray-200"><i class="fa-solid fa-camera"></i> Book a demo</a>
+        <section class="text-center lg:text-left text-gray-900 pt-20 lg:pt-24">
+            <div class="max-w-4xl">
+                <h1 class="text-4xl font-medium mb-4 lg:text-6xl lg:mb-6">A powerful solution to grow your startup. Fast!</h1>
+                <p class="text-lg mb-8 lg:text-xl">Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth tool.</p>
+                <div class="flex flex-col gap-5 *:px-8 *:py-4 *:rounded-2xl *:font-medium lg:flex-row">
+                    <a href="#" class="bg-primary-500 text-white hover:bg-primary-700 focus:bg-primary-700 transition-colors duration-300 cursor-pointer">Get Started</a>
+                    <a href="#" class="bg-gray-100 transition-colors duration-300 hover:bg-gray-200 focus:bg-gray-200"><i class="fa-solid fa-camera"></i> Book a demo</a>
+                </div>
             </div>
-            <figure>
+            <figure class="lg:-mt-20">
                 <img src="assets/Landing Page Illustration.png" alt="Landing Page Illustration" class="mt-16">
             </figure>
         </section>
@@ -70,7 +72,7 @@
         </div>
         <div>
             <figure class="bg-gray-200 rounded p-4 flex justify-center">
-                <img src="assets/Business Communications.png" alt="Business Communications Illustration">
+                <img src="assets/Business Communications.png" alt="Business Communications Illustration" class="max-w-xl w-full">
             </figure>
         </div>
     </section>
@@ -85,7 +87,7 @@
         </div>
         <div>
             <figure class="bg-gray-200 rounded p-4 flex justify-center">
-                <img src="assets/Comunication Tools.png" alt="Communications Tools Illustration">
+                <img src="assets/Comunication Tools.png" alt="Communications Tools Illustration" class="max-w-xl w-full">
             </figure>
         </div>
     </section>
@@ -177,7 +179,58 @@
                 </div>
             </div>
         </div>
+        <div class="flex flex-col gap-4 text-center">
+            <p class="text-gray-700">All prices are in USD and charged per month with applicable taxes added at checkout.</p>
+            <a href="#" class="font-semibold">View Features <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
     </section>
+
+    <footer class="bg-black text-white pt-16 pb-4 flex flex-col gap-6">
+        <figure>
+            <img src="assets/Growth Logo White.png" alt="Growth Logo">
+        </figure>
+        <div class="grid grid-cols-2 gap-10 pb-9 justify-center">
+            <div class="col-span-2 p-6 bg-white text-black rounded-2xl flex flex-col gap-5">
+                <div class="flex flex-col gap-1">
+                    <h4 class="font-medium text-gray-800">Subscribe to newsletter</h4>
+                    <p class="text-gray-700">Subscribe now to receive  tips on how to take your business to the next level.</p>
+                </div>
+                <form action="#" class="flex gap-2">
+                    <input type="email" placeholder="Enter your email" class="py-3 pl-3 pr-2 border border-slate-500 rounded-lg w-3/5">
+                    <button type="submit" class="px-5 bg-primary-500 flex items-center justify-center text-white font-medium rounded-lg hover:animate-pulse">Subscribe</button>
+                </form>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h5 class="font-semibold text-lg">Company</h5>
+                <ul class="flex flex-col gap-4 *:text-gray-200">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Process</a></li>
+                    <li><a href="#">Join our team</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-5">
+                <h5 class="font-semibold text-lg">Resources</h5>
+                <ul class="flex flex-col gap-4 *:text-gray-200">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Recent Projects</a></li>
+                </ul>
+            </div>
+            <div class="col-span-2 flex flex-col gap-5">
+                <h5 class="font-semibold text-lg">Contact</h5>
+                <ul class="flex flex-col gap-4 *:text-gray-200">
+                    <li><a href="#">hello@growthapp.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul class="flex gap-4">
+                <li><a href="#" class="hover:text-primary-500 transition-colors duration-500"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="hover:text-primary-500 transition-colors duration-500"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p class="text-gray-300 text-sm">&copy; 2024 Growth. All rights reserved</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
