@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="font-poppins pt-7 flex flex-col gap-16 *:px-[4vw] sm:*:px-[6vw] lg:gap-28">
@@ -17,7 +19,7 @@
                 <li><a href="#">Features</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#" class="lg:py-3 lg:px-6 lg:bg-slate-200 lg:rounded-xl">Log in</a></li>
+                <li><a href="#" class="lg:py-3 lg:px-6 lg:bg-slate-200 lg:rounded-xl hover:bg-primary-500 focus:bg-primary-500 hover:text-white focus:text-white transition-colors duration-500">Log in</a></li>
                 <button class="absolute top-6 right-6 text-xl lg:hidden" id="closeNav"><i class="fa-solid fa-close"></i></button>
             </ul>
             <button class="bg-gray-100 w-10 h-10 rounded-xl hover:bg-primary-500 hover:text-white transition-colors duration-300 lg:hidden" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
@@ -39,19 +41,19 @@
     </header>
 
     <section>
-        <h2 class="text-center text-3xl text-gray-900 font-medium mb-4">Essential tools for propelling your business forward</h2>
+        <h2 class="text-center text-3xl text-gray-900 font-medium mb-4 lg:text-5xl">Essential tools for propelling your business forward</h2>
         <p class="text-center text-gray-700">Streamline your operations, boost productivity and drive growth with our essential tools</p>
-        <div class="mt-10">
+        <div class="mt-10 lg:mt-16 lg:grid lg:grid-cols-2 lg:gap-6">
             <div class="mb-6">
-                <h3 class="text-gray-900 font-medium text-2xl mb-2">Dashboard and reporting</h3>
+                <h3 class="text-gray-900 font-medium text-2xl mb-2 lg:text-4xl lg:mb-5">Dashboard and reporting</h3>
                 <p class="text-gray-700">Gain valuable insights with real-time monitoring. Track key performance indicators and make data-driven decisions.</p>
-                <div class="mt-6 flex flex-col">
+                <div class="mt-6 flex flex-col lg:mt-10">
                     <div>
-                        <h4 class="text-gray-900 text-xl mb-2">Real-time monitoring <i class="fa-solid fa-arrow-right"></i></h4>
+                        <h4 class="text-gray-900 text-xl mb-2 lg:text-2xl lg:flex lg:justify-between lg:items-center">Real-time monitoring <i class="fa-solid fa-arrow-right cursor-pointer lg:text-xl"></i></h4>
                         <p class="text-gray-700 pb-5 border-b border-b-gray-900">View live data and performance metrics.</p>
                     </div>
-                    <div class="py-4 border-b border-b-slate-300 text-xl"><h4>Data visualization</h4></div>
-                    <div class="py-4 border-b border-b-slate-300 text-xl"><h4>Alerts and notifications</h4></div>
+                    <div class="py-4 border-b border-b-slate-300 text-xl lg:text-2xl"><h4>Data visualization</h4></div>
+                    <div class="py-4 border-b border-b-slate-300 text-xl lg:text-2xl"><h4>Alerts and notifications</h4></div>
                 </div>
             </div>
             <div>
@@ -62,10 +64,10 @@
         </div>
     </section>
 
-    <section class="flex flex-col gap-6">
-        <div class="flex flex-col gap-5">
-            <div class="flex flex-col gap-2">
-                <h3 class="font-medium text-2xl">Business communications</h3>
+    <section class="flex flex-col gap-6 lg:grid lg:grid-cols-2">
+        <div class="flex flex-col gap-5 lg:gap-10 lg:order-2">
+            <div class="flex flex-col gap-5">
+                <h3 class="font-medium text-2xl lg:text-4xl">Business communications</h3>
                 <p class="text-gray-700">Keep track of your contacts, schedule appointments and never miss a follow-up with our powerful contact management solution. Store and organise contact information for clients, partners, and potential investors.</p>
             </div>
             <a href="#" class="font-medium">Learn more <i class="fa-solid fa-arrow-right"></i></a>
@@ -77,10 +79,10 @@
         </div>
     </section>
 
-    <section class="flex flex-col gap-6">
-        <div class="flex flex-col gap-5">
+    <section class="flex flex-col gap-6 lg:grid lg:grid-cols-2">
+        <div class="flex flex-col gap-5 lg:gap-10">
             <div class="flex flex-col gap-2">
-                <h3 class="font-medium text-2xl">Communication tools</h3>
+                <h3 class="font-medium text-2xl lg:text-4xl">Communication tools</h3>
                 <p class="text-gray-700">Keep your team informed and on the same page with our real-time communication tools for messaging, video conferencing and more.</p>
             </div>
             <a href="#" class="font-medium">Learn more <i class="fa-solid fa-arrow-right"></i></a>
@@ -93,15 +95,15 @@
     </section>
 
     <main class="mt-10 bg-black text-white flex flex-col *:flex *:flex-col gap-16">
-        <section class="gap-8 py-14 items-center border-b border-b-slate-300">
-            <h2 class="text-center font-medium text-3xl">See how it works and get started in less than 2 minutes</h2>
+        <section class="gap-8 py-14 items-center border-b border-b-slate-300/10">
+            <h2 class="text-center font-medium text-3xl lg:text-5xl lg:max-w-3xl">See how it works and get started in less than 2 minutes</h2>
             <figure class="cursor-pointer">
-                <img src="assets/Video.png" alt="Video">
+                <img src="assets/Video.png" alt="Video" class="max-w-[835px] w-full">
             </figure>
-            <a href="#" class="bg-primary-500 w-full text-center py-4 rounded-2xl font-medium hover:animate-pulse">Get Started</a>
+            <a href="#" class="bg-primary-500 w-full text-center py-4 rounded-2xl font-medium hover:animate-pulse lg:w-auto lg:px-8">Get Started</a>
         </section>
         <section class="gap-10 pb-14">
-            <h2 class="font-medium text-3xl text-balance">Don't just take our word for it, see the success  stories from businesses just like yours.</h2>
+            <h2 class="font-medium text-3xl text-balance lg:text-5xl lg:max-w-4xl">Don't just take our word for it, see the success  stories from businesses just like yours.</h2>
             <div class="flex gap-8 flex-wrap *:flex *:flex-col *:gap-5 *:px-6 *:py-8 *:bg-white *:rounded-2xl *:text-black *:max-w-80 *:h-min justify-center">
                 <div>
                     <cite>“Our business has seen a significant increase in productivity since we started using the Growth app.”</cite>
@@ -130,7 +132,7 @@
 
     <section class="flex flex-col gap-10">
         <div class="flex flex-col gap-4 text-center">
-            <h2 class="font-medium text-3xl">Pricing</h2>
+            <h2 class="font-medium text-3xl lg:text-5xl">Pricing</h2>
             <p class="text-gray-700">Start free and scale while you grow. No hidden fees. Unlimited users for free.</p>
         </div>
         <div class="flex flex-wrap justify-center gap-8 *:px-6 *:py-10 *:rounded-2xl *:shadow-lg *:shadow-gray-400 *:max-w-[400px] *:h-min *:flex *:flex-col *:gap-8">
@@ -158,7 +160,7 @@
                 <div class="flex flex-col gap-8">
                     <div class="flex flex-col gap-1">
                         <h4 class="font-medium text-2xl">Premium</h4>
-                        <p class="text-gray-700">Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
+                        <p>Keep track of your contacts, gain valuable insights, analyse live data and performance metrics.</p>
                     </div>
                     <div class="flex gap-1 items-center">
                         <h5 class="font-medium text-2xl">$49</h5>
@@ -189,14 +191,14 @@
         <figure>
             <img src="assets/Growth Logo White.png" alt="Growth Logo">
         </figure>
-        <div class="grid grid-cols-2 gap-10 pb-9 justify-center">
+        <div class="grid grid-cols-2 gap-10 pb-9 justify-center lg:grid-cols-5">
             <div class="col-span-2 p-6 bg-white text-black rounded-2xl flex flex-col gap-5">
                 <div class="flex flex-col gap-1">
-                    <h4 class="font-medium text-gray-800">Subscribe to newsletter</h4>
+                    <h4 class="font-medium text-gray-800 lg:text-xl">Subscribe to newsletter</h4>
                     <p class="text-gray-700">Subscribe now to receive  tips on how to take your business to the next level.</p>
                 </div>
                 <form action="#" class="flex gap-2">
-                    <input type="email" placeholder="Enter your email" class="py-3 pl-3 pr-2 border border-slate-500 rounded-lg w-3/5">
+                    <input type="email" placeholder="Enter your email" class="py-3 pl-3 pr-2 border border-slate-500 rounded-lg w-3/5 transition duration-500 focus:border-primary-500 focus-visible:outline-none">
                     <button type="submit" class="px-5 bg-primary-500 flex items-center justify-center text-white font-medium rounded-lg hover:animate-pulse">Subscribe</button>
                 </form>
             </div>
@@ -216,7 +218,7 @@
                     <li><a href="#">Recent Projects</a></li>
                 </ul>
             </div>
-            <div class="col-span-2 flex flex-col gap-5">
+            <div class="col-span-2 flex flex-col gap-5 lg:col-span-1">
                 <h5 class="font-semibold text-lg">Contact</h5>
                 <ul class="flex flex-col gap-4 *:text-gray-200">
                     <li><a href="#">hello@growthapp.com</a></li>
@@ -229,7 +231,7 @@
                 <li><a href="#" class="hover:text-primary-500 transition-colors duration-500"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
         </div>
-        <p class="text-gray-300 text-sm">&copy; 2024 Growth. All rights reserved</p>
+        <p class="text-gray-300 text-sm mt-4">&copy; 2024 Growth. All rights reserved</p>
     </footer>
 
     <script src="js/script.js"></script>
